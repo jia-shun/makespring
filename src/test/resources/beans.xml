@@ -1,0 +1,6 @@
+<beans>
+    <bean id="userDao" class="org.js.dao.UserDAOImpl"/>
+    <bean id="userService" class="org.js.service.UserService">
+        <property name="userDAO" ref="userDao"/>
+    </bean>
+</beans>
